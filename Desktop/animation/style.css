@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    perspective: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.load {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 12px;
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: rotateX(0deg) rotateY(180deg);
+    }
+    100% {
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
